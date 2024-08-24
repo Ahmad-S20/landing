@@ -5,6 +5,11 @@ body {
     background-color: #eee;
 }
 
+
+.menu{
+    display: none;
+}
+
 .header{
     background-color: #fff;
     padding: 15px 0px;
@@ -21,6 +26,7 @@ body {
 
 .navbar ul{
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
 }
 
@@ -34,6 +40,7 @@ body {
 
 .auth{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
 }
@@ -54,3 +61,43 @@ body {
     background-color: var(--maincolor);
     border:2px solid var(--maincolor);
 }
+
+/*header media*/
+
+@media screen and (max-width: 950px){
+    .navbar ul{
+        display: none;
+    }
+    .menu{
+        display: block;
+        order:1;
+    }
+}
+
+@media screen and (max-width:578px){
+    .auth{
+        display: none;
+    }
+}
+
+@media screen and (max-width:346px){
+    .container{
+        width: 90%;
+    }
+    .logo img{
+        width: 20px;
+    }
+    .log a{
+        font-size: 10px;
+    }
+}
+
+
+/*$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);*/
