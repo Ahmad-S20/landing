@@ -325,7 +325,7 @@ body {
 }
 
 /**********************************/
-/**Courses section*/
+/**Courses*/
 
 .courses{
     background-color: #fff;
@@ -454,7 +454,7 @@ body {
     align-self: flex-end;
 }
 
-@media screen and (max-width : 820px){
+@media screen and (max-width : 860px){
    .course-items{
     width: 100%;
    }
@@ -466,6 +466,20 @@ body {
     display: flex;
     justify-content: center;
    }
+}
+
+@media screen and (max-width : 660px){
+    .course{
+    width: 100%;
+   }
+}
+
+@media screen and (max-width : 440px){
+    .course-info span:first-of-type
+{
+    
+    padding: 0px;
+}
 }
 
 
