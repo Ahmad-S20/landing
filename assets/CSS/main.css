@@ -513,6 +513,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
+    position: relative;
 }
 
 .user-info{
@@ -530,6 +531,18 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+}
+
+.testimonial::after{
+    content: '';
+    position: absolute;
+    /*this is how to make a rectangle in 4 triangles*/
+    /***********************************************/
+    top: 0;
+    right: 0;
+    border-top: 50px solid #998c8c;
+    border-bottom: 50px solid transparent;
+    border-left: 50px solid transparent;
 }
 
 @media screen and (max-width: 790px)
